@@ -1,23 +1,26 @@
-import { StyleSheet, Dimensions } from "react-native";
+import { StyleSheet } from "react-native";
 
-const width = Dimensions.get('screen').width;
+
 
 const styles = StyleSheet.create({ 
     formContext: {
        width:"100%",
-       height: width,
-       bottom:0,
+       height: "70%",
+       bottom:15,
        backgroundColor:"#ffffff",
        alignItems:"center",
        borderTopLeftRadius:30,
+       borderTopRightRadius:30,
        borderBottomRightRadius:30,
+       borderBottomLeftRadius:30,
        marginTop:30,
         
 },
 
     form:{
-        width:"100%",
+        width:"80%",
         height:"auto",
+        alignItems:"center",
         marginTop:30,
         padding:10,
     },
@@ -25,6 +28,7 @@ const styles = StyleSheet.create({
         color:"#000000",
         fontSize:18,
         padding:20,
+        
     },
     input:{
         width:"100%",
@@ -33,7 +37,23 @@ const styles = StyleSheet.create({
         height:40,
         margin:12,
         paddingLeft:10,
-    }
+        
+    },
+    ButtonCalculator:{
+        borderRadius:50,
+        alignItems:"center",
+        justifyContent:"center",
+        width:"100%",
+        backgroundColor:"black",
+        paddingTop:14,
+        paddingBottom:14,
+        marginLeft:12,
+        marginTop:30,
+    },
+    textbuttonCalculator:{
+        fontSize:20,
+        color:"red",
+    },
 });
 
 export default styles
