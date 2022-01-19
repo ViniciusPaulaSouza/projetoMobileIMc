@@ -4,34 +4,27 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({ 
     formContext: {
-       width:"100%",
-       height: "70%",
-       bottom:15,
-       backgroundColor:"#ffffff",
-       alignItems:"center",
-       borderTopLeftRadius:30,
-       borderTopRightRadius:30,
-       borderBottomRightRadius:30,
-       borderBottomLeftRadius:30,
-       marginTop:30,
-        
+        flex:1,
+        backgroundColor:"#FFFFFF",
+        borderTopLeftRadius:30,
+        borderTopRightRadius:30,
+        alignItems:"center",
+        paddingTop:30
 },
 
     form:{
-        width:"80%",
-        height:"auto",
-        alignItems:"center",
-        marginTop:30,
-        padding:10,
+        flex:1,
+        width:"100%",
+        padding:15,
     },
     formLabel:{
         color:"#000000",
         fontSize:18,
-        padding:20,
+        padding:0,
         
     },
     input:{
-        width:"100%",
+        width:"90%",
         borderRadius:50,
         backgroundColor:"#f6f6f6",
         height:40,
@@ -43,17 +36,31 @@ const styles = StyleSheet.create({
         borderRadius:50,
         alignItems:"center",
         justifyContent:"center",
-        width:"100%",
-        backgroundColor:"black",
+        width:"95%",
+        backgroundColor:"#B0E0E6",
         paddingTop:14,
         paddingBottom:14,
-        marginLeft:12,
-        marginTop:30,
+        marginLeft:10,
+        marginTop:5,
     },
     textbuttonCalculator:{
         fontSize:20,
-        color:"red",
+        color:"#00008B",
+        paddingLeft:20,
     },
+
+    errorMensage:{
+        fontSize:12,
+        color:"red",
+        fontWeight:"bold",
+        paddingLeft:20
+    },
+
+    exhibitionResultImc:{
+        width:"100%",
+        height:"50%"
+    }
+
 });
 
 export default styles
